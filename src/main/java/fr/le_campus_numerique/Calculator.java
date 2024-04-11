@@ -16,9 +16,6 @@ public class Calculator {
 
     public float divTwoInt(int a, int b) {
 
-        if (b == 0) {
-            throw new ArithmeticException("Division par 0 impossible");
-        }
         return a / b;
     }
 }

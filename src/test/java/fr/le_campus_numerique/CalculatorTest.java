@@ -31,13 +31,12 @@ class CalculatorTest {
     @Test
     void divTwoInt() {
 
-        float result = calc.divTwoInt(10, 2);
+        double result = calc.divTwoInt(10, 2);
         assertEquals(5, result);
     }
 
     @Test
     void testDivisionByZero() {
-
         assertThrows(ArithmeticException.class, () -> calc.divTwoInt(10, 0));
     }
 }
