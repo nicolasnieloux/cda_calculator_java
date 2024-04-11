@@ -15,12 +15,10 @@ public class Calculator {
     }
 
     public float divTwoInt(int a, int b) {
-        float result = 0;
+
         if (b == 0) {
-            System.out.println("Division par 0 impossible");
-        } else {
-            result = a / b;
+            throw new ArithmeticException("Division par 0 impossible");
         }
-        return result;
+        return a / b;
     }
 }
